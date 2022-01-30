@@ -21,7 +21,7 @@ public class RegistrationPage {
 
   private SelenideElement
       formTitle = $(".practice-form-wrapper"),
-      firstNameInput = $("#firstNames"),
+      firstNameInput = $("#firstName"),
       lastNameInput = $("#lastName"),
       emailInput = $("#userEmail"),
       mobileNumberInput = $("#userNumber"),
