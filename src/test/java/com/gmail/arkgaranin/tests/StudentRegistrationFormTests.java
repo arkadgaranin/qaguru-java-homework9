@@ -44,7 +44,7 @@ public class StudentRegistrationFormTests extends TestBase {
     put("Date of Birth", dayOfBirth + " " + monthOfBirth + "," + yearOfBirth);
     put("Subjects", subject1 + ", " + subject2 + ", " + subject3);
     put("Hobbies", hobbyResult1 + ", " + hobbyResult2);
-//    put("Picture", picture);
+    put("Picture", "");
     put("Address", currentAddress);
     put("State and City", state + " " + city);
   }};
@@ -77,6 +77,6 @@ public class StudentRegistrationFormTests extends TestBase {
 
     // Проверка появления попапа регистрации и данных в нем
     registrationPage.checkResultsPopupTitle();
-//    registrationPage.checkResultsPopupValue(expectedData);
+    registrationPage.checkResultsPopupValue(expectedData);
   }
 }
