@@ -1,6 +1,8 @@
 package com.gmail.arkgaranin.tests;
 
 import com.codeborne.selenide.Configuration;
+import com.gmail.arkgaranin.helpers.Attachments;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -16,5 +18,13 @@ public class TestBase {
     capabilities.setCapability("enableVNC", true);
     capabilities.setCapability("enableVideo", true);
     Configuration.browserCapabilities = capabilities;
+  }
+
+  @AfterEach
+  void addAttachments() {
+    Attachments.takeScreenshot();
+    Attachments.takePageSource();
+    Attachments.addVideo();
+    Attachments.browserConsoleLogs();
   }
 }
