@@ -44,7 +44,7 @@ public class StudentRegistrationFormTests extends TestBase {
     put("Date of Birth", dayOfBirth + " " + monthOfBirth + "," + yearOfBirth);
     put("Subjects", subject1 + ", " + subject2 + ", " + subject3);
     put("Hobbies", hobbyResult1 + ", " + hobbyResult2);
-    put("Picture", "image.png");
+    put("Picture", picture);
     put("Address", currentAddress);
     put("State and City", state + " " + city);
   }};
